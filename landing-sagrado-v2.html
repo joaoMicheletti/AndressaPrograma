@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Formação para Facilitadoras do Sagrado Feminino</title>
+<meta name="description" content="Programa de Formação para Facilitadoras do Sagrado Feminino — uma jornada completa de autoconhecimento, saberes ancestrais e facilitação de círculos e rituais." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Formação para Facilitadoras do Sagrado Feminino" />
+<meta property="og:description" content="Jornada completa para tornar-se Facilitadora do Sagrado Feminino: círculos, rituais, certificação e comunidade." />
+<meta name="theme-color" content="#e11d48" />
+
+<style>
+  :root{
+    --bg: #fff8f8;
+    --bg-soft: #fff1f2;
+    --primary-50:#fff1f2;
+    --primary-100:#ffe4e6;
+    --primary-200:#fecdd3;
+    --primary-300:#fda4af;
+    --primary-600:#e11d48;
+    --primary-700:#be123c;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --ring:#fecdd3;
+    --card:#ffffff;
+    --border:#f5d7db;
+    --shadow: 0 10px 30px rgba(190,18,60,0.08);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    color:var(--text);
+    background: linear-gradient(180deg, var(--bg) 0%, #ffffff 40%, var(--bg) 100%);
+  }
+
+  /* Utilities */
+  .container{max-width:1100px; padding:0 20px; margin:0 auto}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+    height:44px; padding:0 18px; border-radius:12px; border:1px solid transparent;
+    font-weight:600; cursor:pointer; text-decoration:none; transition:.2s;
+  }
+  .btn-primary{ background:var(--primary-600); color:#fff; box-shadow:var(--shadow); }
+  .btn-primary:hover{ background:var(--primary-700); transform:translateY(-1px) }
+  .btn-outline{ background:#fff; color:var(--primary-700); border-color:var(--border) }
+  .btn-outline:hover{ border-color:var(--primary-300); box-shadow:var(--shadow) }
+  .badge{ display:inline-flex; gap:.5rem; align-items:center; padding:6px 10px; font-size:12px; border-radius:999px; background:var(--primary-100); color:var(--primary-700); border:1px solid var(--ring); }
+  .grid{ display:grid; gap:1rem }
+  .grid-2{ grid-template-columns:1fr }
+  .grid-3{ grid-template-columns:1fr }
+  @media(min-width:860px){ .grid-2{ grid-template-columns:1.1fr .9fr } .grid-3{ grid-template-columns:repeat(3,1fr) } }
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow);
+  }
+  .card-body{ padding:20px }
+  .muted{ color:var(--muted) }
+  section{ scroll-margin-top:90px }
+  .section{ padding:70px 0 }
+  .title{ font-weight:800; letter-spacing:-.02em }
+  h1.title{ font-size:34px; line-height:1.15 }
+  @media(min-width:860px){ h1.title{ font-size:48px } }
+  h2.title{ font-size:28px }
+  @media(min-width:860px){ h2.title{ font-size:32px } }
+  .lead{ font-size:18px; color:#374151 }
+  .list{ list-style:none; padding:0; margin:0 }
+  .list li{ display:flex; gap:.6rem; align-items:flex-start; margin:10px 0 }
+  .pill{ display:inline-flex; padding:8px 12px; border-radius:999px; background:var(--primary-50); border:1px solid var(--border); }
+  .accent-bg{ background:linear-gradient(135deg, var(--primary-100), #fff) }
+  .accent-soft{ background:var(--bg-soft) }
+  .sticky{ position:sticky; top:100px }
+  .video{ aspect-ratio:16/9; background:#f3f4f6; border:1.5px dashed #e5e7eb; border-radius:14px; overflow:hidden }
+  .video iframe{ width:100%; height:100%; border:0 }
+  .hero-visual{ aspect-ratio:4/5; border-radius:22px; background:linear-gradient(135deg, var(--primary-100), #fff); padding:6px; box-shadow:var(--shadow) }
+  .hero-visual > div{ border-radius:18px; background:rgba(255,255,255,.75); backdrop-filter: blur(6px); border:1px solid var(--border); height:100%; display:grid; place-content:center; text-align:center }
+  .nav{ position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px); background:rgba(255,255,255,.85); border-bottom:1px solid var(--border) }
+  .nav-inner{ height:64px; display:flex; align-items:center; justify-content:space-between }
+  .nav a{ color:inherit; text-decoration:none }
+  .nav .links{ display:none; gap:18px; font-size:14px }
+  @media(min-width:960px){ .nav .links{ display:flex } }
+  .brand{ display:flex; align-items:center; gap:10px; font-weight:700 }
+  .brand-logo{ width:36px; height:36px; border-radius:12px; background:var(--primary-200); display:grid; place-content:center; color:var(--primary-700) }
+  .footer{ border-top:1px solid var(--border) }
+  .faq summary{ cursor:pointer; font-weight:600 }
+  .faq summary::marker{ color:var(--primary-700) }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <div class="brand-logo">✦</div>
+      <span>Formação Sagrado Feminino</span>
+    </div>
+    <nav class="links">
+      <a href="#sobre">Sobre</a>
+      <a href="#curriculo">Conteúdo</a>
+      <a href="#publico">Para quem</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#detalhes">Detalhes</a>
+    </nav>
+    <div>
+      <a class="btn btn-outline" href="#conteudo-completo">Ver conteúdo</a>
+      <a class="btn btn-primary" href="#inscricao">Garantir minha vaga</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="section">
+  <div class="container grid grid-2" style="align-items:center; gap:2rem">
+    <div>
+      <span class="badge">✨ Programa de Formação</span>
+      <h1 class="title" style="margin:16px 0 10px">Torne-se uma Facilitadora do Sagrado Feminino e transforme vidas</h1>
+      <p class="lead">Uma jornada completa para mulheres que desejam despertar sua potência, aprofundar a conexão consigo e guiar outras em processos de cura, expansão e empoderamento.</p>
+      <div style="margin-top:22px; display:flex; gap:12px; flex-wrap:wrap">
+        <a class="btn btn-primary" href="#inscricao">Quero me tornar Facilitadora</a>
+        <a class="btn btn-outline" href="#video">Ver apresentação</a>
+      </div>
+      <div style="margin-top:14px; display:flex; gap:20px; flex-wrap:wrap" class="muted">
+        <span>✅ Certificação ao final</span>
+        <span>👭 Comunidade exclusiva</span>
+      </div>
+    </div>
+    <div>
+      <div class="hero-visual">
+        <div>
+          <div style="font-size:48px">🌿</div>
+          <p style="margin:.5rem 0 0; font-weight:600">Imagem do Programa</p>
+          <p class="muted" style="font-size:12px">Substituir por foto/arte oficial</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section">
+  <div class="container grid" style="gap:2rem">
+    <div class="grid" style="grid-template-columns:1fr; gap:2rem">
+      <div>
+        <h2 class="title">Sobre o Programa</h2>
+        <p class="muted" style="margin-top:.8rem; line-height:1.7">
+          O <strong>Programa de Formação para Facilitadoras do Sagrado Feminino</strong> é uma jornada profunda de autoconhecimento, espiritualidade e saberes ancestrais. Foi criado para mulheres que sentem o chamado de se tornarem guardiãs da sabedoria feminina e desejam conduzir círculos, rituais e vivências transformadoras com ética, presença e amorosidade.
+        </p>
+        <ul class="list" style="margin-top:1rem">
+          <li><span>✔</span><span>Condução de círculos e rituais com segurança e propósito</span></li>
+          <li><span>✔</span><span>Práticas integrativas que acolhem corpo, mente e espírito</span></li>
+          <li><span>✔</span><span>Ética, liderança e presença para guiar processos de cura</span></li>
+          <li><span>✔</span><span>Caminho de expansão pessoal aliado ao serviço ao coletivo</span></li>
+        </ul>
+        <div style="margin-top:18px">
+          <a class="btn btn-primary" href="#inscricao">Quero viver essa transformação</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body" id="video">
+          <div class="video">
+            <!-- Substitua VIDEO_ID pelo ID do seu vídeo no YouTube -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Apresentação — Formação Sagrado Feminino" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <p class="muted" style="font-size:14px; margin-top:10px">Conheça a visão, a proposta e a energia da formação.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRÍCULO -->
+<section id="curriculo" class="section accent-soft" style="border-top:1px solid var(--border); border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div style="display:flex; align-items:center; gap:10px">
+      <div class="pill">🎓</div>
+      <h2 class="title">O que você vai aprender</h2>
+    </div>
+    <p class="muted" style="margin-top:.5rem">Uma trilha em cinco módulos que alinha profundidade espiritual, metodologia de facilitação e visão de impacto.</p>
+
+    <div id="conteudo-completo" class="grid grid-3" style="margin-top:16px; gap:16px">
+      <div class="card"><div class="card-body"><strong>Módulo 1 – Autoconhecimento e Reconexão</strong><p class="muted" style="margin:.5rem 0 0">Fundamentos, práticas de presença, jornada interior e reconexão com a essência.</p></div></div>
+      <div class="card"><div class="card-body"><strong>Módulo 2 – Saberes Ancestrais do Sagrado Feminino</strong><p class="muted" style="margin:.5rem 0 0">Arquétipos, ciclos, rituais e raízes que sustentam a sabedoria feminina.</p></div></div>
+      <div class="card"><div class="card-body"><strong>Módulo 3 – Círculos e Rituais de Cura</strong><p class="muted" style="margin:.5rem 0 0">Criação de espaços seguros, condução de vivências e rituais transformadores.</p></div></div>
+      <div class="card"><div class="card-body"><strong>Módulo 4 – Técnicas de Facilitação e Condução de Grupos</strong><p class="muted" style="margin:.5rem 0 0">Ética, comunicação, liderança e manejo de grupo com sensibilidade e firmeza.</p></div></div>
+      <div class="card"><div class="card-body"><strong>Módulo 5 – Empreendedorismo Espiritual e Impacto Social</strong><p class="muted" style="margin:.5rem 0 0">Posicionamento, produto, agenda de círculos e sustentabilidade do trabalho.</p></div></div>
+    </div>
+
+    <div style="margin-top:18px; display:flex; gap:14px; flex-wrap:wrap; align-items:center">
+      <a class="btn btn-primary" href="#inscricao">Quero acessar a formação completa</a>
+      <span class="muted">⏱ Carga horária: definir</span>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section id="publico" class="section">
+  <div class="container grid" style="gap:2rem">
+    <div>
+      <h2 class="title">Para quem é</h2>
+      <p class="muted" style="margin-top:.5rem">Mulheres que sentem o chamado de servir e liderar processos de cura e expansão.</p>
+    </div>
+    <div class="grid grid-3" style="gap:16px">
+      <div class="card"><div class="card-body"><strong>Buscam reconexão consigo</strong><p class="muted" style="margin:.5rem 0 0">Mulheres em jornada de autoconhecimento e espiritualidade.</p></div></div>
+      <div class="card"><div class="card-body"><strong>Facilitadoras e terapeutas</strong><p class="muted" style="margin:.5rem 0 0">Quem deseja ampliar práticas e aprofundar a condução de vivências.</p></div></div>
+      <div class="card"><div class="card-body"><strong>Empreendedoras do bem-estar</strong><p class="muted" style="margin:.5rem 0 0">Profissionais que querem unir propósito, serviço e autonomia.</p></div></div>
+      <div class="card"><div class="card-body"><strong>Chamado de guiar outras</strong><p class="muted" style="margin:.5rem 0 0">Quem sente a missão de criar espaços seguros de acolhimento.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section id="beneficios" class="section" style="border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:#fff">
+  <div class="container">
+    <div style="display:flex; align-items:center; gap:10px">
+      <div class="pill">⭐</div>
+      <h2 class="title">Benefícios da formação</h2>
+    </div>
+    <div class="grid" style="margin-top:14px; grid-template-columns:repeat(1,1fr); gap:10px">
+      <div class="list">
+        <li><span>✔</span><span>Torne-se referência no Sagrado Feminino em sua comunidade</span></li>
+        <li><span>✔</span><span>Conduza vivências profundas com segurança, ética e presença</span></li>
+        <li><span>✔</span><span>Desenvolva liderança sensível e firme para guiar grupos</span></li>
+        <li><span>✔</span><span>Construa autonomia com um trabalho alinhado ao seu propósito</span></li>
+        <li><span>✔</span><span>Acesse uma rede de apoio com mulheres na mesma jornada</span></li>
+        <li><span>✔</span><span>Receba certificação e um plano para iniciar seus círculos</span></li>
+      </div>
+    </div>
+    <div style="margin-top:18px">
+      <a class="btn btn-primary" href="#inscricao">Quero esses benefícios</a>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITADORA -->
+<section id="facilitadora" class="section">
+  <div class="container grid grid-2" style="align-items:center; gap:2rem">
+    <div>
+      <h2 class="title">Quem conduz a formação</h2>
+      <p class="muted" style="margin-top:.8rem; line-height:1.7">
+        Idealizado por <strong>[Nome da Responsável]</strong>, terapeuta e guardiã do Sagrado Feminino, com anos de experiência em círculos de mulheres, rituais ancestrais e práticas integrativas. Sua missão é despertar em cada mulher a força, a cura e a conexão com sua essência.
+      </p>
+      <ul class="list" style="margin-top:.6rem; font-size:14px">
+        <li><span>•</span><span> Condução de mais de [X] círculos e vivências</span></li>
+        <li><span>•</span><span> Formação em [áreas relevantes]</span></li>
+        <li><span>•</span><span> Atuação em comunidade e projetos sociais</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="hero-visual">
+        <div>
+          <div style="font-size:42px">👩🏻‍🦰</div>
+          <p style="margin:.5rem 0 0; font-weight:600">Foto da facilitadora</p>
+          <p class="muted" style="font-size:12px">Substituir pelo retrato oficial</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="section accent-soft" style="border-top:1px solid var(--border); border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div style="display:flex; align-items:center; gap:10px">
+      <div class="pill">❝</div>
+      <h2 class="title">Transformações reais</h2>
+    </div>
+    <div class="grid grid-3" style="margin-top:16px; gap:16px">
+      <div class="card"><div class="card-body"><p>“Participar dessa formação foi um divisor de águas. Hoje conduzo círculos com confiança e propósito.”</p><p class="muted" style="margin-top:8px; font-size:14px">— Nome da Aluna</p></div></div>
+      <div class="card"><div class="card-body"><p>“A profundidade das práticas me transformou por dentro e me deu segurança para facilitar.”</p><p class="muted" style="margin-top:8px; font-size:14px">— Nome da Aluna</p></div></div>
+      <div class="card"><div class="card-body"><p>“Encontrei uma comunidade que me apoia e me impulsiona a servir com amorosidade.”</p><p class="muted" style="margin-top:8px; font-size:14px">— Nome da Aluna</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DETALHES / OFERTA + INSCRIÇÃO -->
+<section id="detalhes" class="section">
+  <div class="container grid" style="gap:2rem; grid-template-columns:1fr; align-items:start">
+    <div class="grid" style="gap:16px">
+      <h2 class="title">Formato, certificação e bônus</h2>
+      <div class="grid grid-3" style="gap:16px">
+        <div class="card"><div class="card-body"><b>Formato:</b> Online e ao vivo (com gravações disponíveis).</div></div>
+        <div class="card"><div class="card-body"><b>Carga horária:</b> [X horas] ao longo de [X semanas].</div></div>
+        <div class="card"><div class="card-body"><b>Certificação:</b> Facilitadora do Sagrado Feminino.</div></div>
+        <div class="card"><div class="card-body"><b>Bônus:</b> Comunidade exclusiva + templates para círculos e rituais.</div></div>
+      </div>
+
+      <details class="faq card" style="margin-top:10px">
+        <summary class="card-body">Como funciona a certificação?</summary>
+        <div class="card-body" style="border-top:1px solid var(--border)">Ao concluir a carga horária mínima, atividades e avaliação final, você recebe o certificado reconhecido pela formação.</div>
+      </details>
+      <details class="faq card">
+        <summary class="card-body">As aulas ficam gravadas?</summary>
+        <div class="card-body" style="border-top:1px solid var(--border)">Sim. Todas as aulas ao vivo ficam disponíveis para você rever durante o período do programa.</div>
+      </details>
+      <details class="faq card">
+        <summary class="card-body">Preciso ter experiência prévia?</summary>
+        <div class="card-body" style="border-top:1px solid var(--border)">Não. A formação foi desenhada para acolher iniciantes e também aprofundar a prática de quem já atua.</div>
+      </details>
+    </div>
+
+    <!-- Oferta fixa / Inscrição -->
+    <div class="card sticky" id="inscricao" style="margin-top:10px">
+      <div class="card-body">
+        <h3 style="margin:0 0 10px; font-size:20px; font-weight:800">Garanta sua vaga</h3>
+        <div class="muted" style="font-size:14px">
+          <p>• Turma limitada para acompanhamento próximo</p>
+          <p>• Certificação + materiais de apoio</p>
+          <p>• Comunidade e networking entre alunas</p>
+        </div>
+        <div class="accent-bg" style="border:1px solid var(--border); border-radius:14px; padding:14px; margin:12px 0">
+          <div class="muted" style="font-size:14px">Condição especial de lançamento</div>
+          <div style="font-size:28px; font-weight:800; letter-spacing:-.02em">Definir investimento</div>
+          <div class="muted" style="font-size:12px; margin-top:4px">Opções de parcelamento e PIX</div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr; gap:10px">
+          <!-- Substitua 55SEU_NUMERO pelo número real (com DDI e DDD) -->
+          <a class="btn btn-primary" href="https://wa.me/55SEU_NUMERO?text=Olá!%20Quero%20me%20inscrever%20na%20Formação%20para%20Facilitadoras%20do%20Sagrado%20Feminino." target="_blank" rel="noopener">Quero me inscrever</a>
+          <a class="btn btn-outline" href="https://wa.me/55SEU_NUMERO?text=Olá!%20Tenho%20dúvidas%20sobre%20a%20Formação.%20Pode%20me%20ajudar?" target="_blank" rel="noopener">Falar com atendimento</a>
+        </div>
+        <p class="muted" style="font-size:12px; margin-top:8px">Ao clicar, você será direcionada para o WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer section" style="padding:32px 0">
+  <div class="container" style="display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap">
+    <p class="muted" style="font-size:14px">© <span id="year"></span> Formação Sagrado Feminino. Todos os direitos reservados.</p>
+    <div style="display:flex; gap:16px; font-size:14px">
+      <a href="#sobre">Sobre</a>
+      <a href="#detalhes">Detalhes</a>
+      <a href="#inscricao">Inscrição</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
